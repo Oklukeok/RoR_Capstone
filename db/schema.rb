@@ -15,18 +15,23 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_21_223659) do
   enable_extension "plpgsql"
 
   create_table "entities", force: :cascade do |t|
-    t.integer "authorId"
+    t.bigint "user_id"
+    t.bigint "group_id"
     t.string "name"
     t.integer "amount"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["group_id"], name: "index_entities_on_group_id"
+    t.index ["user_id"], name: "index_entities_on_user_id"
   end
 
   create_table "groups", force: :cascade do |t|
+    t.bigint "user_id"
     t.string "name"
     t.string "icon"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_groups_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|

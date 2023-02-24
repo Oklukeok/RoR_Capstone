@@ -1,14 +1,53 @@
 <p style="color: green"><%= notice %></p>
+<% totalSum = 0%>
 
-<h1>Entities</h1>
-
-<div id="entities">
-  <% @entities.each do |entity| %>
-    <%= render entity %>
-    <p>
-      <%= link_to "Show this entity", entity %>
-    </p>
-  <% end %>
+<div id="nav">
+  <h1>CashTrack</h1>
+  <%= link_to "Categories", groups_path%>
+  <%= link_to "Sign out", destroy_user_session_path, data: { turbo_method: :delete } %>
 </div>
 
-<%= link_to "New entity", new_entity_path %>
+<section id="entitiesIndex">
+<h1>Entities</h1>
+<%= link_to "Add Transaction", new_entity_path %>
+<table>
+
+  <tr>
+      <td><strong>Category</strong> </td>
+      <td><strong>Transaction</strong></td>
+      <td><strong>Amount</strong></td>
+      <td><strong>Date</strong></td>
+      <td><strong>Actions</strong>
+    </tr>  
+
+
+    <% @entities.each do |entity| %>
+      <% totalSum += entity.amount%>
+    <tr>
+        <td>
+            <% @groups.each do |groups| %>
+              <%if groups.id == entity.group_id%>
+                <%=groups.name%>
+              <%end%>
+           <%end%>
+          </td>
+
+        <td><%= entity.name %></td>
+
+        <td><%= entity.amount %></td>
+
+        <td><%= entity.created_at %></td>
+
+        <td><%= link_to "Delete", entity %></td>
+
+    </tr>
+
+    <%end%>
+
+
+</table>
+
+<h2>Total Amout : <%= totalSum %></h2>
+
+
+</section>

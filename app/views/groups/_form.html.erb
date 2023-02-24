@@ -21,6 +21,11 @@
     <%= form.text_field :icon %>
   </div>
 
+   <div>
+    <%= form.label :user_id, style: "display: block" %>
+    <%= form.select :user_id, @users.all.collect {|group| [group. name, group.id]} , :required => 'required',   class:"form-select" %>
+   </div>
+
   <div>
     <%= form.submit %>
   </div>
