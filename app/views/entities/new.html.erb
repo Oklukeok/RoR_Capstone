@@ -1,5 +1,11 @@
 <h1>New entity</h1>
 
+<div id="nav">
+  <h1>CashTrack</h1>
+  <%= link_to "Categories", groups_path%>
+  <%= link_to "Sign out", destroy_user_session_path, data: { turbo_method: :delete } %>
+</div>
+<section id="entitiesIndex">
 <%= render "form", entity: @entity %>
 
 <br>
@@ -7,3 +13,5 @@
 <div>
   <%= link_to "Back to entities", entities_path %>
 </div>
+
+</section>

@@ -1,6 +1,16 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Groups</h1>
+<div id="nav">
+  <h1>CashTrack</h1>
+  <%= link_to "Transactions", entities_path%>
+  <%= link_to "Sign out", destroy_user_session_path, data: { turbo_method: :delete } %>
+</div>
+
+
+<section id="groupIndex">
+
+<%groupSum = 0 %>
+<h1>Categories</h1>
 
 <div id="groups">
   <% @groups.each do |group| %>
@@ -8,7 +18,18 @@
     <p>
       <%= link_to "Show this group", group %>
     </p>
+    <% @entities.each do |entities|%>
+      <%if entities.group_id == group.id%>
+      <%groupSum+=entities.amount%>
+      
+      <%end%>
+      
+    <%end%>
+    <h4>Total Group amount:<%=groupSum%></h4>
+     <%groupSum=0%>
   <% end %>
 </div>
 
 <%= link_to "New group", new_group_path %>
+
+</section>

@@ -12,9 +12,17 @@
   <% end %>
 
   <div>
-    <%= form.label :authorId, style: "display: block" %>
-    <%= form.number_field :authorId %>
+    <%= form.label :user_id, style: "display: block" %>
+    <%= form.select :user_id, @users.all.collect {|group| [group. name, group.id]} , :required => 'required',   class:"form-select" %>
+   </div>
+
+<div>
+    <%= form.label :mandarina, style: "display: block" %>
+    <%= form.select :group_id, @groups.all.collect {|group| [group. name, group.id]},{
+    include_blank: true} , :required => 'required',   class:"form-select" %>
   </div>
+
+
 
   <div>
     <%= form.label :name, style: "display: block" %>
