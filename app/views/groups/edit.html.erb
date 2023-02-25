@@ -1,0 +1,15 @@
+<div id="nav">
+  <h1>CashTrack</h1>
+  <%= link_to "Transactions", entities_path%>
+  <%= link_to "Sign out", destroy_user_session_path, data: { turbo_method: :delete } %>
+</div>
+<h1>Editing group</h1>
+
+<%= render "form", group: @group %>
+
+<br>
+
+<div>
+  <%= link_to "Show this group", @group %> |
+  <%= link_to "Back to groups", groups_path %>
+</div>

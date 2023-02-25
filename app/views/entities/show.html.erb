@@ -1,0 +1,17 @@
+<p style="color: green"><%= notice %></p>
+
+<div id="nav">
+  <h1>CashTrack</h1>
+  <%= link_to "Categories", groups_path%>
+  <%= link_to "Sign out", destroy_user_session_path, data: { turbo_method: :delete } %>
+</div>
+<section id="entitiesIndex">
+<%= render @entity %>
+
+<div>
+  
+  <%= link_to "Back to entities", entities_path %>
+
+  <%= button_to "Destroy this entity", @entity, method: :delete %>
+</div>
+</section>
