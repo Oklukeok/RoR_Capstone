@@ -33,14 +33,14 @@ html {
 
 #landing h1 {
   color: white;
-  font-family: 'Pacifico', cursive;
+  font-family: 'proxima-nova', sans-serif;
   font-size: 4em;
 }
 
 #landing a {
   color: white;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'proxima-nova', sans-serif;
   font-size: 1.8em;
 }
 
@@ -48,7 +48,7 @@ html {
   margin-right: 3%;
   color: black;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'proxima-nova', sans-serif;
 }
 
 #groupIndex a {
@@ -77,7 +77,7 @@ html {
 
 #landing p {
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'proxima-nova', sans-serif;
 }
 
 #nav {
@@ -93,7 +93,7 @@ html {
 }
 
 #nav h1 {
-  font-family: 'Pacifico', cursive;
+  font-family: 'proxima-nova', sans-serif;
   font-size: 1.5em;
 }
 
@@ -110,12 +110,12 @@ html {
   color: white;
   text-decoration: none;
   margin-top: 10%;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'proxima-nova', sans-serif;
 }
 
 #entitiesIndex {
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'proxima-nova', sans-serif;
   margin-top: 20%;
 }
 
@@ -126,11 +126,11 @@ html {
 #signUp {
   margin-top: 20%;
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'proxima-nova', sans-serif;
 }
 
 #groupIndex {
   margin-top: 30%;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'proxima-nova', sans-serif;
   color: white;
 }
