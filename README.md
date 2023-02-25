@@ -186,9 +186,8 @@ If you like this project hit the ⭐️ button!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
+I would like to thanks to the entire Ruby community, and Gregoire Vella for the original concept design. Check is work! https://www.behance.net/gregoirevella
 
-I would like to thank...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
