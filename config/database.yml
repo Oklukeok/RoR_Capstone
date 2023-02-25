@@ -17,25 +17,22 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  username: postgres
-  password: rogstrix
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
   <<: *default
-  database: RoR_Capstone_development
-  username: postgres
-  password: rogstrix
+  database: cashtrack_sz2r
+  
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: RoR_Capstone
+  #username: cashtrack_sz2r_user
 
   # The password associated with the postgres role (username).
-  #password:
+  #password: BO4uAJeZIgWWwwLSuwSO1n6ViiXkFbtv
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -60,9 +57,8 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: RoR_Capstone_test
-  username: postgres
-  password: rogstrix
+  database: cashtrack_sz2r
+ 
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
