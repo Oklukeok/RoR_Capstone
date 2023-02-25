@@ -110,6 +110,7 @@ html {
   color: white;
   text-decoration: none;
   margin-top: 10%;
+  font-family: 'Poppins', sans-serif;
 }
 
 #entitiesIndex {
@@ -126,4 +127,10 @@ html {
   margin-top: 20%;
   color: white;
   font-family: 'Poppins', sans-serif;
+}
+
+#groupIndex {
+  margin-top: 30%;
+  font-family: 'Poppins', sans-serif;
+  color: white;
 }
