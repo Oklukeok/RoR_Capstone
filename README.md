@@ -73,8 +73,6 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **You can create your own user account and track your personal finances**
 - **You can create your customs categories to separate your outgoings**
 - **You can add every transaction you did**
