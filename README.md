@@ -36,7 +36,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [CashTrack] <a name="about-project"></a>
+# 📖 CashTrack <a name="about-project"></a>
 
 > Ruby on Rails Capstone project.
 
